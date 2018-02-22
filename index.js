@@ -1,6 +1,6 @@
 const gitgraph = new GitGraph({
     template: {
-        colors: ["#FFA69E", "#008FB5", "#FFA657", "#79C99E", "#6457A6"],
+        colors: ["#D81159", "#008FB5", "#FFA657", "#79C99E", "#6457A6"],
         branch: {
             lineWidth: 8,
             spacingX: 50,
