@@ -4,6 +4,16 @@
   background-color: #FBFEF9;
 }
 
+header {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem 1rem 2rem 3.5rem;
+}
+
+header .title {
+  color: #C51051;
+  font-size: 3rem;
+}
+
 .footer {
   padding: 1.5rem;
 }
