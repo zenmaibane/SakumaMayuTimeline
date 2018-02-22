@@ -353,7 +353,7 @@ const data = [
         "branchName": BRANCHES_NAME.MOBAMAS,
         "date": "2017/06/14"
     }, {
-        "message": "ドリームLIVEフェスティバル 七夕SP 落花流水(北条加蓮・佐久間まゆ)登場",
+        "message": "ドリームLIVEフェスティバル 七夕SP 落花流水(白坂小梅・北条加蓮・佐久間まゆ)登場",
         "branchName": BRANCHES_NAME.MOBAMAS,
         "date": "2017/06/14"
     }, {
