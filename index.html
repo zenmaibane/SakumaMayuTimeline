@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.11.4/gitgraph.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.11.4/gitgraph.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
@@ -16,6 +17,9 @@
         <header>
             <h1 class="title">Sakuma Mayu's Timeline</h1>
         </header>
+        <div class="fa-3x">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
         <canvas id="gitGraph"></canvas>
         <footer class="footer">
             <div class="container">
@@ -27,7 +31,8 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.11.4/gitgraph.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 

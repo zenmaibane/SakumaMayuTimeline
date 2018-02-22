@@ -421,34 +421,38 @@ const branch = {
     "mobamas": gitgraph.branch(BRANCHES_NAME.MOBAMAS)
 }
 
-for (let i = 0; i < data.length; i++) {
-    if (i === 0) {
-        gitgraph.commit({
-            message: getCommitMessage(data[i])
-        })
-        continue
+$(document).ready(function () {
+    for (let i = 0; i < data.length; i++) {
+        if (i === 0) {
+            gitgraph.commit({
+                message: getCommitMessage(data[i])
+            })
+            continue
+        }
+        if (data[i].branchName === data[i - 1].branchName) { //ブランチを変更する必要がないなら
+            gitgraph.commit({
+                message: getCommitMessage(data[i])
+            })
+            continue
+        }
+        if (typeof branch[data[i].branchName] === "undefined") { //新しいブランチが必要になったら
+            branch.mobamas.checkout() //モバマス(masterブランチ)からブランチを切るため
+            const newBranch = gitgraph.branch(data[i].branchName)
+            newBranch.checkout()
+            branch[data[i].branchName] = newBranch
+            gitgraph.commit({
+                message: getCommitMessage(data[i])
+            })
+        } else {
+            branch[data[i].branchName].checkout()
+            gitgraph.commit({
+                message: getCommitMessage(data[i])
+            })
+        }
     }
-    if (data[i].branchName === data[i - 1].branchName) { //ブランチを変更する必要がないなら
-        gitgraph.commit({
-            message: getCommitMessage(data[i])
-        })
-        continue
-    }
-    if (typeof branch[data[i].branchName] === "undefined") { //新しいブランチが必要になったら
-        branch.mobamas.checkout() //モバマス(masterブランチ)からブランチを切るため
-        const newBranch = gitgraph.branch(data[i].branchName)
-        newBranch.checkout()
-        branch[data[i].branchName] = newBranch
-        gitgraph.commit({
-            message: getCommitMessage(data[i])
-        })
-    } else {
-        branch[data[i].branchName].checkout()
-        gitgraph.commit({
-            message: getCommitMessage(data[i])
-        })
-    }
-}
+    $(".fa-3x").remove();
+});
+
 
 function getCommitMessage(datum) {
     return `${datum.message}(${datum.date})`
