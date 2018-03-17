@@ -416,7 +416,7 @@ const data = [{
     "branchName": BRANCHES_NAME.REAL,
     "date": "2017/12/13"
 }, {
-    "message": "第28回アイドルLIVEロワイヤル ドリームステアウェイ(佐久間まゆ・喜多日菜子)登場",
+    "message": "第28回アイドルLIVEロワイヤル ドリームアウェイ(佐久間まゆ・喜多日菜子)登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/03/17"
 }]
