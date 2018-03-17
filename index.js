@@ -415,6 +415,10 @@ const data = [{
     "message": "恋が咲く季節発売",
     "branchName": BRANCHES_NAME.REAL,
     "date": "2017/12/13"
+}, {
+    "message": "第28回アイドルLIVEロワイヤル ドリームステアウェイ(佐久間まゆ・喜多日菜子)登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/03/17"
 }]
 
 const branch = {
