@@ -424,6 +424,10 @@ const data = [{
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2018/03/20"
 }, {
+    "message": "シンデレラガールズ劇場第1068話登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2018/03/29"
+}, {
     "message": "イベント 鋼鉄公演きらりんロボ外伝 ― モロボシティS.O.S！ ― 登場",
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2018/04/01"
