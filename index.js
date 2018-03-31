@@ -424,7 +424,7 @@ const data = [{
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2018/03/20"
 }, {
-    "message": "イベント 鋼鉄公演きらりんロボ外伝―モロボシティS.O.S！―登場",
+    "message": "イベント 鋼鉄公演きらりんロボ外伝 ― モロボシティS.O.S！ ― 登場",
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2018/04/01"
 }]
