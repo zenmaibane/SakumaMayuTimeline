@@ -2,15 +2,15 @@ const gitgraph = new GitGraph({
     template: {
         colors: ["#D81159", "#008FB5", "#F46036", "#033B29", "#6457A6"],
         branch: {
-            lineWidth: 8,
-            spacingX: 50,
+            lineWidth: 6,
+            spacingX: 20,
         },
         commit: {
             spacingY: -80,
             dot: {
-                size: 12
+                size: 8
             },
-            widthExtension: 150,
+            widthExtension: 400,
             message: {
                 displayAuthor: false,
                 displayBranch: true,
@@ -432,7 +432,7 @@ const data = [{
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2018/04/01"
 }, {
-    "message": "LIVEツアーカーニバル 刑事公演 アンビバレント・バディ 〜二人はWin-Win〜 \n ナミティエ専属モデル(小室千奈美・高垣楓・佐久間まゆ・岸部彩華) 登場",
+    "message": "LIVEツアーカーニバル 刑事公演 アンビバレント・バディ 〜二人はWin-Win〜 ナミティエ専属モデル(小室千奈美・高垣楓・佐久間まゆ・岸部彩華) 登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/04/14"
 }]
