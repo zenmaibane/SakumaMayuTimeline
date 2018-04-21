@@ -439,6 +439,10 @@ const data = [{
     "message": "シンデレラガールズ劇場第1079話登場",
     "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2018/04/17"
+}, {
+    "message": "第18回ぷちデレラコレクション登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/04/21"
 }]
 
 const branch = {
