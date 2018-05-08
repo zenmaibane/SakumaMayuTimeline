@@ -436,6 +436,14 @@ const data = [{
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/04/14"
 }, {
+    "message": "シンデレラガールズ劇場第1079話登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2018/04/17"
+}, {
+    "message": "第18回ぷちデレラコレクション登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/04/21"
+}, {
     "message": "[魅惑のショウタイム]佐久間まゆ登場",
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2018/05/03"
