@@ -435,6 +435,14 @@ const data = [{
     "message": "LIVEツアーカーニバル 刑事公演 アンビバレント・バディ 〜二人はWin-Win〜 ナミティエ専属モデル(小室千奈美・高垣楓・佐久間まゆ・岸部彩華) 登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/04/14"
+}, {
+    "message": "[魅惑のショウタイム]佐久間まゆ登場",
+    "branchName": BRANCHES_NAME.DERESUTE,
+    "date": "2018/05/03"
+}, {
+    "message": "シンデレラガールズ劇場わいど 第4話登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2018/05/03"
 }]
 
 const branch = {
