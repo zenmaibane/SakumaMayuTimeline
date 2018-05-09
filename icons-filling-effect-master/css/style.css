@@ -11,9 +11,8 @@ Primary style
 } */
 
 body {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-family: "Merriweather", serif;
-  color: #71495b;
   background-color: #FFFFFF;
 }
 
@@ -21,7 +20,7 @@ body {
 Resource style 
 -------------------------------- */
 header {
-  padding: 2rem 0;
+  padding: 2rem 3rem 2rem;
   margin: 0 auto;
   /* height: 200px; */
   max-width: 1170px;
@@ -158,8 +157,16 @@ header h1 {
 }
 
 footer {
+  margin: 0 auto;
   position: relative;
-  height: 50vh;
+  height: 30vh;
+  max-width: 1170px;
   background: #FFFFFF;
   z-index: 2;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer-content{
+  background-color: aquamarine;
+  padding: 1rem;
 }
