@@ -1,0 +1,165 @@
+/* -------------------------------- 
+Primary style
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  font-size: 1.6rem;
+  font-family: "Merriweather", serif;
+  color: #71495b;
+  background-color: #FFFFFF;
+}
+
+/* -------------------------------- 
+Resource style 
+-------------------------------- */
+header {
+  padding: 2rem 0;
+  margin: 0 auto;
+  /* height: 200px; */
+  max-width: 1170px;
+  background-color: #FFFFFF;
+  z-index: 2; 
+  
+  /* padding: 1rem 1rem 2rem 3.5rem; */
+}
+
+header h1 {
+
+  /* text-align: center; */
+  color: #C51051;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cd-icons-filling {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  /* hide ::after pseudo element - fix for Edge 15 and below */
+  overflow: hidden;
+}
+
+.cd-icons-filling::before, .cd-icons-filling::after {
+  /* the 2 underneath colored sections */
+  /* fix flickering on Edge 15 and below */
+  content: '/';
+  color: transparent;
+  position: fixed;
+  /* trick to remove flickering on resize */
+  width: calc(90% - 2px);
+  max-width: 1170px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 50vh;
+  z-index: -1;
+}
+
+.cd-icons-filling::before {
+  /* fix bug - ::before element visible before starting scrolling */
+  top: -1px;
+  background-color: #f4bd89;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.cd-icons-filling::after {
+  top: 50%;
+  background-color: #71495b;
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-icons-filling.cd-icons-filling--new-color-1::before {
+    background-color: #c06c69;
+  }
+  .cd-icons-filling.cd-icons-filling--new-color-2::before {
+    background-color: #bf69c0;
+  }
+  .cd-icons-filling.cd-icons-filling--new-color-3::before {
+    background-color: #699ec0;
+  }
+}
+
+.cd-service {
+  position: relative;
+  z-index: 2;
+  min-height: 50px;
+  margin-left: 50px;
+  background-color: #FFFFFF;
+  padding: .6em 1em 2em;
+}
+
+.cd-service::before, .cd-service::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  right: 100%;
+  z-index: 2;
+}
+
+.cd-service::before {
+  top: 0;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+.cd-service::after {
+  top: 50px;
+  bottom: 0;
+  background-image: url("../../bar.png");
+  background-repeat: repeat-y;
+}
+
+.cd-service.cd-service--divider::after {
+  top: 0;
+}
+
+.cd-service.cd-service--divider:last-child {
+  display: none;
+}
+
+.cd-service.cd-service--1::before {
+  background-image: url("../../circle.png");
+}
+
+.cd-service.cd-service--2::before {
+  background-image: url("../../circle.png");
+}
+
+.cd-service.cd-service--3::before {
+  background-image: url("../img/cd-icon-3-small.svg");
+}
+
+.cd-service.cd-service--4::before {
+  background-image: url("../img/cd-icon-4-small.svg");
+}
+
+.cd-service h2 {
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 1em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.cd-service p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: black;
+}
+
+footer {
+  position: relative;
+  height: 50vh;
+  background: #FFFFFF;
+  z-index: 2;
+}
