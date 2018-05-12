@@ -1,27 +1,3 @@
-const gitgraph = new GitGraph({
-    template: {
-        colors: ["#D81159", "#008FB5", "#F46036", "#033B29", "#6457A6"],
-        branch: {
-            lineWidth: 6,
-            spacingX: 20,
-        },
-        commit: {
-            spacingY: -80,
-            dot: {
-                size: 8
-            },
-            widthExtension: 400,
-            message: {
-                displayAuthor: false,
-                displayBranch: true,
-                displayHash: false,
-                font: "normal 11pt Arial"
-            }
-        }
-    }
-});
-
-
 /*
 日時 YYYY/MM/DD
 フォーマットは "<カード名>登場(日時)"
@@ -53,7 +29,7 @@ const data = [{
     "date": "2012/09/30"
 }, {
     "message": "シンデレラガールズ劇場第38話登場",
-    "branchName": BRANCHES_NAME.MOBAMAS,
+    "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2012/09/30"
 }, {
     "message": "[ﾊﾞﾚﾝﾀｲﾝﾊﾟｰﾃｨ-]佐久間まゆ登場",
@@ -453,43 +429,50 @@ const data = [{
     "date": "2018/05/03"
 }]
 
-const branch = {
-    "mobamas": gitgraph.branch(BRANCHES_NAME.MOBAMAS)
-}
 
-$(document).ready(function () {
+$(function () {
     for (let i = 0; i < data.length; i++) {
-        if (i === 0) {
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-            continue
+        if (i != 0 && data[i].date == data[i - 1].date) {
+            data[i].date = ""
         }
-        if (data[i].branchName === data[i - 1].branchName) { //ブランチを変更する必要がないなら
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-            continue
-        }
-        if (typeof branch[data[i].branchName] === "undefined") { //新しいブランチが必要になったら
-            branch.mobamas.checkout() //モバマス(masterブランチ)からブランチを切るため
-            const newBranch = gitgraph.branch(data[i].branchName)
-            newBranch.checkout()
-            branch[data[i].branchName] = newBranch
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-        } else {
-            branch[data[i].branchName].checkout()
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-        }
+        const post = getPostContent(data[i]);
+        $('.content').append(post);
     }
-    $(".fa-3x").remove();
+    smoothScroll();
+
+    $(window).scroll(function () {
+        $('.fadein').each(function () {
+            const POS = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+
+            if (scroll > POS - windowHeight + windowHeight / 8) {
+                $(this).css("opacity", "1");
+            } else {
+                $(this).css("opacity", "0");
+            }
+        });
+    });
 });
 
+function getPostContent(datum) {
+    const post = $('<div>', { class: `timeline-item ${datum.branchName} fadein`, 'date-is': `${datum.date}` });
+    const content = $('<div>', { class: `post-content` })
+    content.append(`<p>[${datum.branchName}]</p>`)
+    content.append(`<p>${datum.message}</p>`)
+    post.append(content)
+    return post;
+}
 
-function getCommitMessage(datum) {
-    return `${datum.message}(${datum.date})`
+function smoothScroll() {
+    const offsetY = -10;
+    const time = 500;
+    $('a[href^="#"]').click(function () {
+        const target = $(this.hash);
+        if (!target.length) return;
+        const targetY = target.offset().top + offsetY;
+        $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+        window.history.pushState(null, null, this.hash);
+        return false;
+    });
 }

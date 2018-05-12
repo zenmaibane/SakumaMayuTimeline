@@ -3,36 +3,60 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:title" content="Sakuma Mayu's Timeline" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenmaibane.github.io/History_of_Mayu_Sakuma/">
+    <meta name="description" content="佐久間まゆの活動をまとめる佐久間まゆが好きな人向けの佐久間まゆタイムライン" />
+    <meta name="twitter:card" content="summary">
     <title>Sakuma Mayu's Timeline</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.11.4/gitgraph.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.11.4/gitgraph.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1 class="title">Sakuma Mayu's Timeline</h1>
-        </header>
-        <div class="fa-3x">
-            <i class="fas fa-spinner fa-spin"></i>
+    <ul>
+        <li>
+            <a href="#top">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#bottom">
+                <i class="fas fa-angle-double-down"></i>
+            </a>
+        </li>
+    </ul>
+
+    <div id="wrapper">
+        <div class="container" id="top">
+            <header>
+                <h1>Sakuma Mayu's Timeline</h1>
+            </header>
+            <div class="content">
+            </div>
         </div>
-        <canvas id="gitGraph"></canvas>
-        <footer class="footer">
+        <footer class="footer" id="bottom">
             <div class="container">
-                <div class="content has-text-centered">
+                <div class="footer-content">
                     誤字・脱字・データの漏れ等ありましたら
                     <a href="https://github.com/zenmaibane/History_of_Mayu_Sakuma">リポジトリ</a>にIssue・PRを出すか
                     <a href="https://twitter.com/kotei_horolo">Twitter</a>までご連絡頂けると幸いです．
                 </div>
+                <div class="share">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://zenmaibane.github.io/History_of_Mayu_Sakuma/"
+                        data-hashtags="sakumamayuTL" data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"> </script>
     <script src="index.js"></script>
 </body>
 
