@@ -1,27 +1,3 @@
-const gitgraph = new GitGraph({
-    template: {
-        colors: ["#D81159", "#008FB5", "#F46036", "#033B29", "#6457A6"],
-        branch: {
-            lineWidth: 6,
-            spacingX: 20,
-        },
-        commit: {
-            spacingY: -80,
-            dot: {
-                size: 8
-            },
-            widthExtension: 400,
-            message: {
-                displayAuthor: false,
-                displayBranch: true,
-                displayHash: false,
-                font: "normal 11pt Arial"
-            }
-        }
-    }
-});
-
-
 /*
 日時 YYYY/MM/DD
 フォーマットは "<カード名>登場(日時)"
@@ -453,42 +429,20 @@ const data = [{
     "date": "2018/05/03"
 }]
 
-const branch = {
-    "mobamas": gitgraph.branch(BRANCHES_NAME.MOBAMAS)
-}
-
+console.log("test");
 $(document).ready(function () {
     for (let i = 0; i < data.length; i++) {
-        if (i === 0) {
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-            continue
-        }
-        if (data[i].branchName === data[i - 1].branchName) { //ブランチを変更する必要がないなら
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-            continue
-        }
-        if (typeof branch[data[i].branchName] === "undefined") { //新しいブランチが必要になったら
-            branch.mobamas.checkout() //モバマス(masterブランチ)からブランチを切るため
-            const newBranch = gitgraph.branch(data[i].branchName)
-            newBranch.checkout()
-            branch[data[i].branchName] = newBranch
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-        } else {
-            branch[data[i].branchName].checkout()
-            gitgraph.commit({
-                message: getCommitMessage(data[i])
-            })
-        }
+        const post = getPostContent(data[i]);
+        $('.content').append(post);   
     }
-    $(".fa-3x").remove();
 });
 
+function getPostContent(datum) { 
+    const content = $('<div>', { class: `timeline-item ${datum.branchName}`, 'date-is': `${datum.date}` }); 
+    content.append(`<p>[${datum.branchName}]</p>`)
+    content.append(`<p>${datum.message}</p>`)
+    return content;
+}
 
 function getCommitMessage(datum) {
     return `${datum.message}(${datum.date})`
