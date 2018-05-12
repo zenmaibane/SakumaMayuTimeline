@@ -436,19 +436,30 @@ $(document).ready(function () {
             data[i].date = ""
         }
         const post = getPostContent(data[i]);
-        $('.content').append(post);   
+        $('.content').append(post);
     }
+    smoothScroll();
+    
 });
 
-function getPostContent(datum) { 
-    const post = $('<div>', { class: `timeline-item ${datum.branchName}`, 'date-is': `${datum.date}` });
-    const content = $('<div>', { class: `post-content`})
+function getPostContent(datum) {
+    const post = $('<div>', { class: `timeline-item ${datum.branchName} fadein`, 'date-is': `${datum.date}` });
+    const content = $('<div>', { class: `post-content` })
     content.append(`<p>[${datum.branchName}]</p>`)
     content.append(`<p>${datum.message}</p>`)
     post.append(content)
     return post;
 }
 
-function getCommitMessage(datum) {
-    return `${datum.message}(${datum.date})`
+function smoothScroll() { 
+    const offsetY = -10;
+    const time = 500;
+    $('a[href^="#"]').click(function () {
+        const target = $(this.hash);
+        if (!target.length) return;
+        const targetY = target.offset().top + offsetY;
+        $('html,body').animate({scrollTop: targetY}, time, 'swing');
+        window.history.pushState(null, null, this.hash);
+        return false;
+    });
 }
