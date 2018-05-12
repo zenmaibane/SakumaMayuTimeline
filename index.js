@@ -446,7 +446,7 @@ $(function () {
             const scroll = $(window).scrollTop();
             const windowHeight = $(window).height();
 
-            if (scroll > POS - windowHeight + windowHeight / 8) {
+            if (scroll > POS - windowHeight + windowHeight / 7) {
                 $(this).css("opacity", "1");
             } else {
                 $(this).css("opacity", "0");
