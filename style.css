@@ -30,7 +30,8 @@ body{
 }
 
 .timeline-item {
-	padding: 3em 2em 2em;
+  font-size: 1.2rem;
+	padding: 1rem 1.6rem 1rem;
 	position: relative;
 	color: rgba(black, .7);
 	border-left: 6px solid #B2B2B2;
@@ -43,13 +44,12 @@ body{
 .timeline-item::before {
   content: attr(date-is);
   position: absolute;
-  left: 2em;
   font-weight: bold;
-  top: 1em;
+  top: 0rem;
   display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: .785rem;
+  font-size: 1.3rem;
 }
 
 .timeline-item::after {
