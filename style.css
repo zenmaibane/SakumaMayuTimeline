@@ -150,5 +150,12 @@ ul a {
 
 ul li {
   padding: 0 0 10px 0;
-}  
+} 
+
+.fadein {
+  transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+}
   

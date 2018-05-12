@@ -430,7 +430,7 @@ const data = [{
 }]
 
 
-$(document).ready(function () {
+$(function () {
     for (let i = 0; i < data.length; i++) {
         if (i != 0 && data[i].date == data[i - 1].date) {
             data[i].date = ""
@@ -439,7 +439,20 @@ $(document).ready(function () {
         $('.content').append(post);
     }
     smoothScroll();
-    
+
+    $(window).scroll(function () {
+        $('.fadein').each(function () {
+            const POS = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+
+            if (scroll > POS - windowHeight + windowHeight / 8) {
+                $(this).css("opacity", "1");
+            } else {
+                $(this).css("opacity", "0");
+            }
+        });
+    });
 });
 
 function getPostContent(datum) {
@@ -451,14 +464,14 @@ function getPostContent(datum) {
     return post;
 }
 
-function smoothScroll() { 
+function smoothScroll() {
     const offsetY = -10;
     const time = 500;
     $('a[href^="#"]').click(function () {
         const target = $(this.hash);
         if (!target.length) return;
         const targetY = target.offset().top + offsetY;
-        $('html,body').animate({scrollTop: targetY}, time, 'swing');
+        $('html,body').animate({ scrollTop: targetY }, time, 'swing');
         window.history.pushState(null, null, this.hash);
         return false;
     });
