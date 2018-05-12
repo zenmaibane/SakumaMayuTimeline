@@ -66,48 +66,63 @@ body{
 }
 
 .timeline-item.mobamas{
+  color: #D81159;
   border-left: 6px solid #D81159;
 }
 .timeline-item.mobamas::after{
   border: 8px solid #D81159;
   background: #D81159;
 }
+.timeline-item.mobamas:last-child {
+  border-image: linear-gradient(to bottom, #D81159 60%, rgba(0, 0, 255, 0)) 1 100%;
+}
 
 .timeline-item.starlightstage{
+  color: #008FB5;
   border-left: 6px solid #008FB5;
 }
 .timeline-item.starlightstage::after{
   border: 8px solid #008FB5;
   background: #008FB5;
 }
+.timeline-item.starlightstage:last-child {
+  border-image: linear-gradient(to bottom, #008FB5 60%, rgba(0, 0, 255, 0)) 1 100%;
+}
 
 .timeline-item.shingeki{
+  color:#F46036;
   border-left: 6px solid #F46036;
 }
 .timeline-item.shingeki::after{
   border: 8px solid #F46036;
   background: #F46036;
 }
+.timeline-item.shingeki:last-child {
+  border-image: linear-gradient(to bottom, #F46036 60%, rgba(0, 0, 255, 0)) 1 100%;
+}
 
 .timeline-item.real{
+  color: #033B29;
   border-left: 6px solid #033B29;
 }
 .timeline-item.real::after{
   border: 8px solid #033B29;
   background: #033B29;
 }
+.timeline-item.real:last-child {
+  border-image: linear-gradient(to bottom, #033B29 60%, rgba(0, 0, 255, 0)) 1 100%;
+}
 
 .timeline-item.anime{
+  color: #6457A6;
   border-left: 6px solid #6457A6;
 }
 .timeline-item.anime::after{
   border: 8px solid #6457A6;
   background: #6457A6;
 }
-
-
-
-.timeline-item:last-child {
-  border-image: linear-gradient(to bottom, #C51051 60%, rgba(0, 0, 255, 0)) 1 100%;
+.timeline-item.anime:last-child {
+  border-image: linear-gradient(to bottom, #645764 60%, rgba(0, 0, 255, 0)) 1 100%;
 }
+
 
