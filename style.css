@@ -1,6 +1,5 @@
 header {
   font-family: 'Montserrat', sans-serif;
-  /* padding: 1rem 1rem 2rem 3.5rem; */
   color: #C51051;
   font-size: 1.6rem;
 }
@@ -39,15 +38,16 @@ body{
 
 .timeline-item p {
   font-size: 1rem;
+  font-family: "Mplus 1p", sans-serif;
 }
 
 .timeline-item::before {
   content: attr(date-is);
   position: absolute;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .15rem;
   top: 0rem;
   display: block;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -125,4 +125,6 @@ body{
   border-image: linear-gradient(to bottom, #645764 60%, rgba(0, 0, 255, 0)) 1 100%;
 }
 
-
+.post-content{
+  padding-top: 1rem;
+}

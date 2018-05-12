@@ -29,7 +29,7 @@ const data = [{
     "date": "2012/09/30"
 }, {
     "message": "シンデレラガールズ劇場第38話登場",
-    "branchName": BRANCHES_NAME.MOBAMAS,
+    "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2012/09/30"
 }, {
     "message": "[ﾊﾞﾚﾝﾀｲﾝﾊﾟｰﾃｨ-]佐久間まゆ登場",
@@ -441,10 +441,12 @@ $(document).ready(function () {
 });
 
 function getPostContent(datum) { 
-    const content = $('<div>', { class: `timeline-item ${datum.branchName}`, 'date-is': `${datum.date}` }); 
+    const post = $('<div>', { class: `timeline-item ${datum.branchName}`, 'date-is': `${datum.date}` });
+    const content = $('<div>', { class: `post-content`})
     content.append(`<p>[${datum.branchName}]</p>`)
     content.append(`<p>${datum.message}</p>`)
-    return content;
+    post.append(content)
+    return post;
 }
 
 function getCommitMessage(datum) {
