@@ -429,9 +429,12 @@ const data = [{
     "date": "2018/05/03"
 }]
 
-console.log("test");
+
 $(document).ready(function () {
     for (let i = 0; i < data.length; i++) {
+        if (i != 0 && data[i].date == data[i - 1].date) {
+            data[i].date = ""
+        }
         const post = getPostContent(data[i]);
         $('.content').append(post);   
     }
