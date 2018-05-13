@@ -366,7 +366,7 @@ const data = [{
 }, {
     "message": "[イリュージョニスタ！]佐久間まゆ登場",
     "branchName": BRANCHES_NAME.DERESUTE,
-    "date": "2016/08/31"
+    "date": "2017/08/31"
 }, {
     "message": "シンデレラガールズ劇場第971話登場",
     "branchName": BRANCHES_NAME.SHINGEKI,
