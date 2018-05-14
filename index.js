@@ -427,6 +427,10 @@ const data = [{
     "message": "シンデレラガールズ劇場わいど 第4話登場",
     "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2018/05/03"
+}, {
+    "message": "第7回シンデレラガール選抜総選挙 7位 Cu3位",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/05/14"
 }]
 
 
