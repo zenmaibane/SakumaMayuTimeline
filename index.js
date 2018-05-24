@@ -108,6 +108,10 @@ const data = [{
     "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2014/07/15"
 }, {
+    "message": "ワンダーフェスティバル 2014【夏】アイドルマスター スペシャルステージ出演",
+    "branchName": BRANCHES_NAME.REAL,
+    "date": "2014/07/27"
+}, {
     "message": "[ﾐﾆｵﾝﾙｰｼﾞｭ]佐久間まゆ登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2014/09/17"
