@@ -80,7 +80,7 @@ const data = [{
     "branchName": BRANCHES_NAME.REAL,
     "date": "2013/11/28"
 }, {
-    "message": "第3回シンデレラガール選抜総選挙 16位",
+    "message": "第3回シンデレラガール総選挙 16位",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2014/04/22"
 }, {
@@ -168,7 +168,7 @@ const data = [{
     "branchName": BRANCHES_NAME.ANIME,
     "date": "2015/04/11"
 }, {
-    "message": "第4回シンデレラガール選抜総選挙 29位 Cu9位",
+    "message": "第4回シンデレラガール総選挙 29位 Cu9位",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2015/04/21"
 }, {
@@ -244,7 +244,7 @@ const data = [{
     "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2016/02/06"
 }, {
-    "message": "第5回シンデレラガール選抜総選挙 27位 Cu8位",
+    "message": "第5回シンデレラガール総選挙 27位 Cu8位",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2016/05/13"
 }, {
@@ -316,7 +316,7 @@ const data = [{
     "branchName": BRANCHES_NAME.REAL,
     "date": "2017/4/26"
 }, {
-    "message": "第6回シンデレラガール選抜総選挙 6位 Cu1位",
+    "message": "第6回シンデレラガール総選挙 6位 Cu1位",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2017/05/14"
 }, {
@@ -432,7 +432,7 @@ const data = [{
     "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2018/05/03"
 }, {
-    "message": "第7回シンデレラガール選抜総選挙 7位 Cu3位",
+    "message": "第7回シンデレラガール総選挙 7位 Cu3位",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/05/14"
 }]
