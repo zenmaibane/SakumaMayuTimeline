@@ -435,6 +435,10 @@ const data = [{
     "message": "第7回シンデレラガール総選挙 7位 Cu3位",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/05/14"
+}, {
+    "message": "リフレッシュルーム 「ねえ、アナタ...♪ どっちにする？」 登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/06/14"
 }]
 
 
