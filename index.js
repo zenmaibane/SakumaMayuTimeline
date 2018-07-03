@@ -439,9 +439,11 @@ const data = [{
     "message": "リフレッシュルーム 「ねえ、アナタ...♪ どっちにする？」 登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/06/14"
+}, {
+    "message": "第3回夏祭りDEドリームLIVEフェスティバル 落花流水(白坂小梅・北条加蓮・佐久間まゆ)登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/07/03"
 }]
-
-
 $(function () {
     for (let i = 0; i < data.length; i++) {
         if (i != 0 && data[i].date == data[i - 1].date) {
