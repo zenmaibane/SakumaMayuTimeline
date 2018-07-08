@@ -443,7 +443,12 @@ const data = [{
     "message": "第3回夏祭りDEドリームLIVEフェスティバル 落花流水(白坂小梅・北条加蓮・佐久間まゆ)登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/07/03"
+}, {
+    "message": "Anisong World Matsuri at Anime Expo 2018 - Japan Kawaii Live - in L.A 出演",
+    "branchName": BRANCHES_NAME.REAL,
+    "date": "2018/07/08(JST)"
 }]
+
 $(function () {
     for (let i = 0; i < data.length; i++) {
         if (i != 0 && data[i].date == data[i - 1].date) {
