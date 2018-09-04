@@ -447,6 +447,10 @@ const data = [{
     "message": "Anisong World Matsuri at Anime Expo 2018 - Japan Kawaii Live - in L.A 出演",
     "branchName": BRANCHES_NAME.REAL,
     "date": "2018/07/08(JST)"
+}, {
+    "message": "シンデレラガールズ劇場わいど 第40話登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2018/09/04"
 }]
 
 $(function () {
