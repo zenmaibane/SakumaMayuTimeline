@@ -451,6 +451,18 @@ const data = [{
     "message": "シンデレラガールズ劇場わいど 第40話登場",
     "branchName": BRANCHES_NAME.SHINGEKI,
     "date": "2018/09/04"
+}, {
+    "message": "アニメシンデレラガールズ劇場 第36話 登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2018/09/04"
+}, {
+    "message": "シンデレラガールズ劇場第1160話登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2018/09/18"
+}, {
+    "message": "デレマスチャンネル 第3回 登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/09/19"
 }]
 
 $(function () {
