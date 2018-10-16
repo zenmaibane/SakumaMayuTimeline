@@ -463,6 +463,26 @@ const data = [{
     "message": "デレマスチャンネル 第3回 登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/09/19"
+}, {
+    "message": "[甘美なる宝石]佐久間まゆ 登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2017/09/30"
+}, {
+    "message": "シンデレラガールズ劇場第1166話登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2017/09/30"
+}, {
+    "message": "第40回ドリームLIVEフェスティバル スウィート・ソアー(橘ありす・佐久間まゆ)登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2018/09/30"
+}, {
+    "message": "シンデレラガールズ劇場第1166話登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2017/10/01"
+}, {
+    "message": "シンデレラガールズ劇場第1167話登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2017/10/03"
 }]
 
 $(function () {
