@@ -486,8 +486,10 @@ const data = [{
 }]
 
 $(function () {
+    let tempDate = "YYYY/MM/DD";
     for (let i = 0; i < data.length; i++) {
-        if (i != 0 && data[i].date == data[i - 1].date) {
+        if (i != 0 && (data[i].date === data[i - 1].date || data[i].date === tempDate)) {
+            tempDate = data[i].date;
             data[i].date = ""
         }
         const post = getPostContent(data[i]);
