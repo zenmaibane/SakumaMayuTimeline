@@ -483,6 +483,10 @@ const data = [{
     "message": "シンデレラガールズ劇場第1167話登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/10/03"
+}, {
+    "message": "Trust me発売",
+    "branchName": BRANCHES_NAME.REAL,
+    "date": "2018/10/31"
 }]
 
 $(function () {
