@@ -487,6 +487,14 @@ const data = [{
     "message": "Trust me発売",
     "branchName": BRANCHES_NAME.REAL,
     "date": "2018/10/31"
+}, {
+    "message": " 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演1日目に出演",
+    "branchName": BRANCHES_NAME.REAL,
+    "date": "2018/12/01"
+}, {
+    "message": " 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演2日目に出演",
+    "branchName": BRANCHES_NAME.REAL,
+    "date": "2018/12/02"
 }]
 
 $(function () {
