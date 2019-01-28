@@ -476,11 +476,11 @@ const data = [{
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/09/30"
 }, {
-    "message": "シンデレラガールズ劇場第1166話登場",
+    "message": "シンデレラガールズ劇場第1167話登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/10/01"
 }, {
-    "message": "シンデレラガールズ劇場第1167話登場",
+    "message": "シンデレラガールズ劇場第1168話登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2018/10/03"
 }, {
@@ -495,6 +495,10 @@ const data = [{
     "message": " 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演2日目に出演",
     "branchName": BRANCHES_NAME.REAL,
     "date": "2018/12/02"
+}, {
+    "message": "第33回アイドルLIVEロワイヤル ドリームアウェイ(佐久間まゆ・喜多日菜子)登場",
+    "branchName": BRANCHES_NAME.MOBAMAS,
+    "date": "2019/01/28"
 }]
 
 $(function () {
