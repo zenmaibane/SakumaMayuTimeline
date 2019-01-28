@@ -498,7 +498,7 @@ const data = [{
 }, {
     "message": "第33回アイドルLIVEロワイヤル ドリームアウェイ(佐久間まゆ・喜多日菜子)登場",
     "branchName": BRANCHES_NAME.MOBAMAS,
-    "date": "2019/01/28"
+    "date": "2019/01/27"
 }]
 
 $(function () {
