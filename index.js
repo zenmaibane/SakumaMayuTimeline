@@ -504,7 +504,7 @@ const data = [{
     "branchName": BRANCHES_NAME.MOBAMAS,
     "date": "2019/01/27"
 }, {
-    "message": "［想いプレゼント］佐久間まゆ 登場",
+    "message": "[想いプレゼント]佐久間まゆ 登場",
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2019/01/31"
 }]
