@@ -507,6 +507,10 @@ const data = [{
     "message": "[想いプレゼント]佐久間まゆ 登場",
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2019/01/31"
+}, {
+    "message": "シンデレラガールズ劇場わいど 第87話 登場",
+    "branchName": BRANCHES_NAME.SHINGEKI,
+    "date": "2019/02/04"
 }]
 
 
