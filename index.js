@@ -200,6 +200,10 @@ const data = [{
     "branchName": BRANCHES_NAME.DERESUTE,
     "date": "2015/09/03"
 }, {
+    "message": "シンデレラガールズ第22話 登場",
+    "branchName": BRANCHES_NAME.ANIME,
+    "date": "2015/09/12"
+}{
     "message": "アニメシンデレラガールズBD5巻(あいくるしい) 発売",
     "branchName": BRANCHES_NAME.REAL,
     "date": "2015/09/25"
